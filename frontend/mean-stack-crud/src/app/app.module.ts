@@ -9,6 +9,9 @@ import { EmployeeListComponent } from './components/employee-list/employee-list.
 import { HttpClientModule } from '@angular/common/http';
 import { ApiService } from './service/api.service';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { AuthModule } from './modules/auth/auth.module';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
 
 @NgModule({
   declarations: [
@@ -20,10 +23,11 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
   imports: [
     BrowserModule,
     FormsModule,
+    AuthModule,
     ReactiveFormsModule,
-
     HttpClientModule,
     AppRoutingModule,
+    BrowserAnimationsModule,
   ],
   providers: [ApiService],
   bootstrap: [AppComponent],
