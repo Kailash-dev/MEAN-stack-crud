@@ -11,6 +11,8 @@ import { ApiService } from './service/api.service';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AuthModule } from './modules/auth/auth.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { LoginComponent } from './components/login/login.component';
+import { RegisterComponent } from './components/register/register.component';
 
 
 @NgModule({
@@ -19,14 +21,17 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     EmployeeCreateComponent,
     EmployeeEditComponent,
     EmployeeListComponent,
+    LoginComponent,
+    RegisterComponent,
   ],
   imports: [
     BrowserModule,
     FormsModule,
+    AppRoutingModule,
     AuthModule,
     ReactiveFormsModule,
     HttpClientModule,
-    AppRoutingModule,
+   
     BrowserAnimationsModule,
   ],
   providers: [ApiService],
